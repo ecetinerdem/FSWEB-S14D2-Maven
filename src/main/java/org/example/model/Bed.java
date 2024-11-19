@@ -5,18 +5,22 @@ public class Bed {
     private int pillows;
     private int height;
     private int sheets;
-    private int quilt;
+    private int quilts;
 
-    public Bed(String style, int pillows, int height, int sheets, int quilt) {
+    public Bed(String style, int pillows, int height, int sheets, int quilts) {
         this.style = style;
         this.pillows = pillows;
         this.height = height;
         this.sheets = sheets;
-        this.quilt = quilt;
+        this.quilts = quilts;
     }
 
-    public void made() {
+    public void make() {
         System.out.println("The bed is being made.");
+    }
+
+    public String getStyle() {
+        return style;
     }
 
     public int getPillows() {
@@ -44,10 +48,14 @@ public class Bed {
     }
 
     public int getQuilt() {
-        return this.quilt;
+        return this.quilts;
     }
 
-    public void setQuilt(int quilt) {
-        this.quilt = quilt;
+    public void setQuilts(int quilts) {
+        this.quilts = quilts;
+    }
+
+    public int getQuilts() {
+        return quilts;
     }
 }
